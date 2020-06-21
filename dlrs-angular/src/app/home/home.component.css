@@ -1,0 +1,26 @@
+.row{
+    display: contents;
+}
+*{
+    font-size: 13px;
+    
+}
+h1{
+    font-size: 2.5rem;
+}
+.right-container{
+    z-index: 2;
+    padding-left: 10%;
+    padding-top: 8%;
+    padding-right: 10%;
+}
+
+.right-inner-container{
+    animation: 0.6s ease-out 0s 1 slideInFromRight;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    border-radius: 5px;
+    padding-bottom: 10%;
+    background-color: #fff;  
+}

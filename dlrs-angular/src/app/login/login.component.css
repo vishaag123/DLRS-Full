@@ -1,0 +1,9 @@
+.login-avatar{
+    
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.avatar{
+    width: 80px;
+}

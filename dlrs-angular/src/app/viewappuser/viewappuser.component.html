@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+ <!-- jQuery -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <!-- Bootstrap JavaScript -->
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<table *ngIf="showAppointment" class="tab-appointment table">
+        <th colspan="4"><h3>Appointment Details</h3></th>
+        <tr>
+          <td colspan="1.5">Name:</td>
+          <td colspan="3">{{currentUserAppointment.name}}</td>
+      </tr>
+      <tr>
+          <td colspan="1.5">Appointment ID:</td>
+          <td colspan="3">{{currentUserAppointment.appointmentDetails[0].appointmentId}}</td>
+      </tr>
+      <tr>
+          <td colspan="1.5">User Id:</td>
+          <td colspan="3">{{currentUserAppointment.userId}}</td>
+      </tr>
+      <tr>
+          <td colspan="1.5">Date of Appointment:</td>
+          <td colspan="3">{{currentUserAppointment.appointmentDetails[0].date}}</td>
+      </tr>
+        <tr><th colspan="4">Test Details</th></tr>
+        
+            <tr>
+              <th>Test Id</th>
+              <th> Test Name</th>
+              <th>Description</th>
+              <th>Cost</th>
+            </tr>
+      
+          
+            <!-- jst for  -->
+            <tr *ngFor="let test of currentAppointmentTests">
+      
+              <td>{{test.id}}</td>
+              <td>{{test.name}}</td>
+              <td>{{test.description}}</td>
+              <td>{{test.cost}}</td>
+            </tr>
+           
+               
+           <tr>
+             <th colspan="4"> Test Report</th>
+           </tr>
+           <tr><td colspan="1">Report Status:</td>
+            <td colspan="2">{{appointmentStatus}}</td>
+            <td colspan="1"><button  *ngIf="showPayment()" class="btn btn-primary" (click)="makePayment()">Pay</button></td>
+          </tr>
+
+           <tr *ngIf="showReport()">
+             <td>
+               Test Report:
+             </td>
+             <td colspan="3"><button (click)="getReportDetails()" class="btn btn-primary">Download</button></td>
+           </tr>
+          
+</table>
+<table *ngIf="showNoAppointment" class="tab-appointment table">
+  <th colspan="4"><h3>No Appointments Created, Please create appointment to view details</h3></th>
+</table>
+
+</body>
+</html>

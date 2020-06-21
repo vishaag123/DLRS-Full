@@ -1,0 +1,52 @@
+*{
+    font-size: 14px;
+    color: #1c676d;
+}
+
+.table{
+width: 100%;
+margin-bottom: 1rem;
+color: #1c676d;
+
+}
+.btn-primary{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    font-size: 12px;
+    color: #fff;
+}
+.btn-group{
+    display: flex;
+    justify-content: center;
+
+}
+
+.test-container{
+    border: 1px #028090 solid;
+    border-radius: 2px;
+}
+.sel-test{
+    color: #d44c32;
+    font-size: 14px;
+}
+legend{
+    color: white;
+    font-size: 16px;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.form-outer-container{
+    padding: 2%;
+}
+.test-checkbox{
+    margin-left: 1.5%;
+    color: #028090;
+}
+.detail-test{
+    margin-top: 2%;
+    color: #d44c32;
+    font-size: 14px;
+}

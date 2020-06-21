@@ -1,0 +1,1432 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ViewappuserComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/viewappuser/viewappuser.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-viewappuser</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./viewappuser.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./viewappuser.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appointmentId">appointmentId</a>
+                            </li>
+                            <li>
+                                <a href="#appointmentStatus">appointmentStatus</a>
+                            </li>
+                            <li>
+                                <a href="#base64Data">base64Data</a>
+                            </li>
+                            <li>
+                                <a href="#currentAppointmentId">currentAppointmentId</a>
+                            </li>
+                            <li>
+                                <a href="#currentAppointmentReport">currentAppointmentReport</a>
+                            </li>
+                            <li>
+                                <a href="#currentAppointmentTests">currentAppointmentTests</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser">currentUser</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserAppointment">currentUserAppointment</a>
+                            </li>
+                            <li>
+                                <a href="#dummyComponent">dummyComponent</a>
+                            </li>
+                            <li>
+                                <a href="#reportImage">reportImage</a>
+                            </li>
+                            <li>
+                                <a href="#reportURL">reportURL</a>
+                            </li>
+                            <li>
+                                <a href="#retrievedImage">retrievedImage</a>
+                            </li>
+                            <li>
+                                <a href="#retrieveResonse">retrieveResonse</a>
+                            </li>
+                            <li>
+                                <a href="#showAppointment">showAppointment</a>
+                            </li>
+                            <li>
+                                <a href="#showNoAppointment">showNoAppointment</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#base64ToArrayBuffer">base64ToArrayBuffer</a>
+                            </li>
+                            <li>
+                                <a href="#createImageFromBlob">createImageFromBlob</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Async</span>
+                                <a href="#getReportDetails">getReportDetails</a>
+                            </li>
+                            <li>
+                                <a href="#makePayment">makePayment</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#showPayment">showPayment</a>
+                            </li>
+                            <li>
+                                <a href="#showReport">showReport</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(testService: <a href="../injectables/TestService.html">TestService</a>, reportService: <a href="../injectables/ReportService.html">ReportService</a>, sanitizer: <a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank">DomSanitizer</a>, router: <a href="https://angular.io/api/router/Router" target="_blank">Router</a>, appointmentService: <a href="../injectables/AppointmentService.html">AppointmentService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:24</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>testService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TestService.html" target="_self" >TestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>reportService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ReportService.html" target="_self" >ReportService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sanitizer</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/platform-browser/DomSanitizer" target="_blank" >DomSanitizer</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>router</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="https://angular.io/api/router/Router" target="_blank" >Router</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>appointmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppointmentService.html" target="_self" >AppointmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="base64ToArrayBuffer"></a>
+                    <span class="name">
+                        <b>
+                            base64ToArrayBuffer
+                        </b>
+                        <a href="#base64ToArrayBuffer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>base64ToArrayBuffer(base64: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="109"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:109</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>base64</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>ArrayBuffer</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="createImageFromBlob"></a>
+                    <span class="name">
+                        <b>
+                            createImageFromBlob
+                        </b>
+                        <a href="#createImageFromBlob"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>createImageFromBlob(image: Blob)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="121"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:121</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>image</td>
+                                    <td>
+                                            <code>Blob</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getReportDetails"></a>
+                    <span class="name">
+                        <b>
+                            <span class="modifier">Async</span>
+                            getReportDetails
+                        </b>
+                        <a href="#getReportDetails"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+                    <span class="modifier-icon icon ion-ios-reset"></span>
+                    <code>getReportDetails()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="73"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:73</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="makePayment"></a>
+                    <span class="name">
+                        <b>
+                            makePayment
+                        </b>
+                        <a href="#makePayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>makePayment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="128"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:128</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="49"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:49</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showPayment"></a>
+                    <span class="name">
+                        <b>
+                            showPayment
+                        </b>
+                        <a href="#showPayment"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showPayment()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="102"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:102</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="showReport"></a>
+                    <span class="name">
+                        <b>
+                            showReport
+                        </b>
+                        <a href="#showReport"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>showReport()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="94"
+                            class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:94</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appointmentId"></a>
+                        <span class="name">
+                            <b>
+                            appointmentId</b>
+                            <a href="#appointmentId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appointmentStatus"></a>
+                        <span class="name">
+                            <b>
+                            appointmentStatus</b>
+                            <a href="#appointmentStatus"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:47</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="base64Data"></a>
+                        <span class="name">
+                            <b>
+                            base64Data</b>
+                            <a href="#base64Data"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:44</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAppointmentId"></a>
+                        <span class="name">
+                            <b>
+                            currentAppointmentId</b>
+                            <a href="#currentAppointmentId"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAppointmentReport"></a>
+                        <span class="name">
+                            <b>
+                            currentAppointmentReport</b>
+                            <a href="#currentAppointmentReport"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/IReport.html" target="_self" >IReport</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>new IReport()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAppointmentTests"></a>
+                        <span class="name">
+                            <b>
+                            currentAppointmentTests</b>
+                            <a href="#currentAppointmentTests"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TestDetail.html" target="_self" >TestDetail[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUser"></a>
+                        <span class="name">
+                            <b>
+                            currentUser</b>
+                            <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/IUserResponse.html" target="_self" >IUserResponse</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:30</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserAppointment"></a>
+                        <span class="name">
+                            <b>
+                            currentUserAppointment</b>
+                            <a href="#currentUserAppointment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/UserAppointment.html" target="_self" >UserAppointment</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:33</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dummyComponent"></a>
+                        <span class="name">
+                            <b>
+                            dummyComponent</b>
+                            <a href="#dummyComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:71</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reportImage"></a>
+                        <span class="name">
+                            <b>
+                            reportImage</b>
+                            <a href="#reportImage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="reportURL"></a>
+                        <span class="name">
+                            <b>
+                            reportURL</b>
+                            <a href="#reportURL"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="retrievedImage"></a>
+                        <span class="name">
+                            <b>
+                            retrievedImage</b>
+                            <a href="#retrievedImage"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="retrieveResonse"></a>
+                        <span class="name">
+                            <b>
+                            retrieveResonse</b>
+                            <a href="#retrieveResonse"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showAppointment"></a>
+                        <span class="name">
+                            <b>
+                            showAppointment</b>
+                            <a href="#showAppointment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="showNoAppointment"></a>
+                        <span class="name">
+                            <b>
+                            showNoAppointment</b>
+                            <a href="#showNoAppointment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/viewappuser/viewappuser.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { User } from &#x27;../model/user&#x27;;
+import { TestService } from &#x27;../services/test.service&#x27;;
+import { IAppointmentTest } from &#x27;../model/appointmenttest&#x27;;
+import { Test } from &#x27;../model/test&#x27;;
+import { ReportService } from &#x27;../services/report.service&#x27;;
+import { IReport } from &#x27;../model/reportresponse&#x27;;
+import { DomSanitizer, SafeUrl } from &#x27;@angular/platform-browser&#x27;;
+import { saveAs } from &#x27;file-saver&#x27;;
+import { AppointmentService } from &#x27;../services/appointment.service&#x27;;
+import { UserAppointment, TestDetail } from &#x27;../model/appointmentmaster&#x27;;
+import { IUserResponse } from &#x27;../model/userresponse&#x27;;
+import { GlobalConstants } from &#x27;../common/global-constants&#x27;;
+import { Router } from &#x27;@angular/router&#x27;;
+
+
+
+@Component({
+  selector: &#x27;app-viewappuser&#x27;,
+  templateUrl: &#x27;./viewappuser.component.html&#x27;,
+  styleUrls: [&#x27;./viewappuser.component.css&#x27;]
+})
+
+export class ViewappuserComponent implements OnInit {
+
+  constructor(private testService: TestService, private reportService: ReportService
+    , private sanitizer: DomSanitizer,
+    private router:Router
+    , private appointmentService: AppointmentService) { }
+  currentUser: IUserResponse;
+
+
+  currentUserAppointment: UserAppointment;
+  currentAppointmentTests: TestDetail[] &#x3D; [];
+  currentAppointmentReport: IReport &#x3D; new IReport();
+  reportImage: any;
+  reportURL: string;
+  showAppointment:boolean&#x3D;false;
+  showNoAppointment:boolean&#x3D;true;
+
+
+
+  retrievedImage: any;
+  base64Data: any;
+  retrieveResonse: any;
+   appointmentId:number;
+  appointmentStatus:string;
+  currentAppointmentId;
+  ngOnInit(): void {
+    this.currentUser &#x3D; JSON.parse(localStorage.getItem(&#x27;currentUser&#x27;));
+
+
+    this.appointmentService.getAppointmentDataByUserId(this.currentUser.id).subscribe
+      (
+        data &#x3D;&gt; {
+          console.log(data);
+          this.currentUserAppointment &#x3D; data;
+          if(this.currentUserAppointment.appointmentDetails[0]!&#x3D;null){
+            this.showAppointment&#x3D;true;
+            this.showNoAppointment&#x3D;false;
+          }
+          this.currentAppointmentTests &#x3D; this.currentUserAppointment.appointmentDetails[0].testDetails;
+          this.appointmentId&#x3D;this.currentUserAppointment.appointmentDetails[0].appointmentId;
+          this.appointmentStatus&#x3D;this.currentUserAppointment.appointmentDetails[0].status;
+          console.log(this.appointmentId);
+
+        }
+      );
+
+  }
+  dummyComponent;
+
+  async getReportDetails() {
+    await this.reportService.getReportByAppointmentId(this.appointmentId).subscribe(data &#x3D;&gt; {
+      this.currentAppointmentReport &#x3D; data;
+
+      //  this.createImageFromBlob(this.currentAppointmentReport.result);
+      this.retrieveResonse &#x3D; this.currentAppointmentReport.result;
+
+      // Below is to show the image
+      // this.reportImage&#x3D;&#x27;data:image/jpeg;base64,&#x27;+this.retrieveResonse;
+
+      //handle pdf
+      var byteArray &#x3D; this.base64ToArrayBuffer(this.retrieveResonse);
+      let blob: any &#x3D; new Blob([byteArray], { type: &#x27;application/octet-stream&#x27; });
+      saveAs(blob, this.currentAppointmentReport.userId + &quot;&quot; + this.currentAppointmentReport.appointmentId + &quot;report.pdf&quot;, true);
+
+
+
+    });
+  }
+
+
+  showReport(){
+    if(this.appointmentStatus&#x3D;&#x3D;&#x3D;GlobalConstants.REPORTGENERATED){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  showPayment(){
+    if(this.appointmentStatus&#x3D;&#x3D;&#x3D;GlobalConstants.NOTPAID){
+      return true;}
+      else return false;
+    }
+  
+
+  base64ToArrayBuffer(base64: any): ArrayBuffer {
+
+    var binary_string &#x3D; window.atob(base64);
+    var len &#x3D; binary_string.length;
+    var bytes &#x3D; new Uint8Array(len);
+    for (var i &#x3D; 0; i &lt; len; i++) {
+      bytes[i] &#x3D; binary_string.charCodeAt(i);
+    }
+    return bytes.buffer;
+  }
+
+
+  createImageFromBlob(image: Blob) {
+
+    var i &#x3D; new Blob([image], { type: &#x27;Image/png&#x27; })
+    let reader &#x3D; new FileReader();
+    this.reportImage &#x3D; saveAs(i, &#x27;image.png&#x27;);
+  }
+
+  makePayment(){
+    console.log(this.currentUserAppointment);
+    localStorage.setItem(&#x27;currentAppDetail&#x27;,JSON.stringify(this.currentUserAppointment));
+    this.router.navigate([&#x27;/checkout&#x27;]);
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang&#x3D;&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset&#x3D;&quot;UTF-8&quot;&gt;
+  &lt;meta name&#x3D;&quot;viewport&quot; content&#x3D;&quot;width&#x3D;device-width, initial-scale&#x3D;1.0&quot;&gt;
+  &lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+ &lt;!-- jQuery --&gt;
+ &lt;script src&#x3D;&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;
+ &lt;!-- Bootstrap JavaScript --&gt;
+ &lt;script src&#x3D;&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;table *ngIf&#x3D;&quot;showAppointment&quot; class&#x3D;&quot;tab-appointment table&quot;&gt;
+        &lt;th colspan&#x3D;&quot;4&quot;&gt;&lt;h3&gt;Appointment Details&lt;/h3&gt;&lt;/th&gt;
+        &lt;tr&gt;
+          &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Name:&lt;/td&gt;
+          &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment.name}}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Appointment ID:&lt;/td&gt;
+          &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment.appointmentDetails[0].appointmentId}}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td colspan&#x3D;&quot;1.5&quot;&gt;User Id:&lt;/td&gt;
+          &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment.userId}}&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Date of Appointment:&lt;/td&gt;
+          &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment.appointmentDetails[0].date}}&lt;/td&gt;
+      &lt;/tr&gt;
+        &lt;tr&gt;&lt;th colspan&#x3D;&quot;4&quot;&gt;Test Details&lt;/th&gt;&lt;/tr&gt;
+        
+            &lt;tr&gt;
+              &lt;th&gt;Test Id&lt;/th&gt;
+              &lt;th&gt; Test Name&lt;/th&gt;
+              &lt;th&gt;Description&lt;/th&gt;
+              &lt;th&gt;Cost&lt;/th&gt;
+            &lt;/tr&gt;
+      
+          
+            &lt;!-- jst for  --&gt;
+            &lt;tr *ngFor&#x3D;&quot;let test of currentAppointmentTests&quot;&gt;
+      
+              &lt;td&gt;{{test.id}}&lt;/td&gt;
+              &lt;td&gt;{{test.name}}&lt;/td&gt;
+              &lt;td&gt;{{test.description}}&lt;/td&gt;
+              &lt;td&gt;{{test.cost}}&lt;/td&gt;
+            &lt;/tr&gt;
+           
+               
+           &lt;tr&gt;
+             &lt;th colspan&#x3D;&quot;4&quot;&gt; Test Report&lt;/th&gt;
+           &lt;/tr&gt;
+           &lt;tr&gt;&lt;td colspan&#x3D;&quot;1&quot;&gt;Report Status:&lt;/td&gt;
+            &lt;td colspan&#x3D;&quot;2&quot;&gt;{{appointmentStatus}}&lt;/td&gt;
+            &lt;td colspan&#x3D;&quot;1&quot;&gt;&lt;button  *ngIf&#x3D;&quot;showPayment()&quot; class&#x3D;&quot;btn btn-primary&quot; (click)&#x3D;&quot;makePayment()&quot;&gt;Pay&lt;/button&gt;&lt;/td&gt;
+          &lt;/tr&gt;
+
+           &lt;tr *ngIf&#x3D;&quot;showReport()&quot;&gt;
+             &lt;td&gt;
+               Test Report:
+             &lt;/td&gt;
+             &lt;td colspan&#x3D;&quot;3&quot;&gt;&lt;button (click)&#x3D;&quot;getReportDetails()&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;Download&lt;/button&gt;&lt;/td&gt;
+           &lt;/tr&gt;
+          
+&lt;/table&gt;
+&lt;table *ngIf&#x3D;&quot;showNoAppointment&quot; class&#x3D;&quot;tab-appointment table&quot;&gt;
+  &lt;th colspan&#x3D;&quot;4&quot;&gt;&lt;h3&gt;No Appointments Created, Please create appointment to view details&lt;/h3&gt;&lt;/th&gt;
+&lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./viewappuser.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">*{
+    font-size: 14px;
+    color: #f2f2f2;
+}
+table{
+    border-collapse: collapse;
+}
+  
+table, th, td,tr {
+        border-bottom: 1px solid #ddd;
+  
+    text-align: start;
+}
+
+.tab-appointment th{
+    background-color:#028090;
+    text-align: center;
+}
+
+.tab-appointment tr{
+    background-color: #02c39a;
+}
+   
+
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <title>Document</title></head><body> <!-- jQuery --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> <!-- Bootstrap JavaScript --> <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script><table *ngIf="showAppointment" class="tab-appointment table">        <th colspan="4"><h3>Appointment Details</h3></th>        <tr>          <td colspan="1.5">Name:</td>          <td colspan="3">{{currentUserAppointment.name}}</td>      </tr>      <tr>          <td colspan="1.5">Appointment ID:</td>          <td colspan="3">{{currentUserAppointment.appointmentDetails[0].appointmentId}}</td>      </tr>      <tr>          <td colspan="1.5">User Id:</td>          <td colspan="3">{{currentUserAppointment.userId}}</td>      </tr>      <tr>          <td colspan="1.5">Date of Appointment:</td>          <td colspan="3">{{currentUserAppointment.appointmentDetails[0].date}}</td>      </tr>        <tr><th colspan="4">Test Details</th></tr>                    <tr>              <th>Test Id</th>              <th> Test Name</th>              <th>Description</th>              <th>Cost</th>            </tr>                            <!-- jst for  -->            <tr *ngFor="let test of currentAppointmentTests">                    <td>{{test.id}}</td>              <td>{{test.name}}</td>              <td>{{test.description}}</td>              <td>{{test.cost}}</td>            </tr>                                     <tr>             <th colspan="4"> Test Report</th>           </tr>           <tr><td colspan="1">Report Status:</td>            <td colspan="2">{{appointmentStatus}}</td>            <td colspan="1"><button  *ngIf="showPayment()" class="btn btn-primary" (click)="makePayment()">Pay</button></td>          </tr>           <tr *ngIf="showReport()">             <td>               Test Report:             </td>             <td colspan="3"><button (click)="getReportDetails()" class="btn btn-primary">Download</button></td>           </tr>          </table><table *ngIf="showNoAppointment" class="tab-appointment table">  <th colspan="4"><h3>No Appointments Created, Please create appointment to view details</h3></th></table></body></html></div>'
+    var COMPONENTS = [{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'CreateappointmentComponent', 'selector': 'app-createappointment'},{'name': 'CreateTestComponent', 'selector': 'app-create-test'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': ''},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'ViewappadminComponent', 'selector': 'app-viewappadmin'},{'name': 'ViewappuserComponent', 'selector': 'app-viewappuser'},{'name': 'ViewtestComponent', 'selector': 'app-viewtest'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ViewappuserComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ViewappuserComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

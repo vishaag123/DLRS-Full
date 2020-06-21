@@ -1,0 +1,442 @@
+.row{
+    display: contents;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+a, a:hover,a:visited, a:focus {
+    text-decoration:none;
+}
+/* Nav bar css */
+.nav{
+    box-shadow: 0px 100px 101px 100px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background:  #02c39A;
+    font-family: 'Poppins', sans-serif;
+}
+.div-space{
+    display: flex;
+    flex: 0.5;;
+}
+.logo{
+    color: #f2f2f2;
+    
+   
+    
+}
+.logo-title{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: left;
+}
+.logo a img{
+    height: 5vh;
+}
+.logo h4{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: left;
+    margin-left: 10px;
+}
+.nav-links{
+    
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    background-color: #02c39A;
+    width: 25%;
+    
+}
+
+.nav-links li{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    text-decoration: none;
+    justify-content: center;
+}
+.nav-links a:hover{
+    background-color: #028090;
+    padding: 5px;
+    transition: .5s;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+}
+
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 16px;
+}
+/* nav bar end */
+/* Central Overlay and Content */
+
+.overlay-container{
+
+    
+    min-height: 92vh;
+    background-size: 100%;
+    position: relative;
+    
+    background-repeat: no-repeat;
+}
+
+.right-container{
+    width: 50%;
+    margin-left: 50%;
+    background: url(/assets/images/undraw_doctor_kw5l.svg);
+    height: 92vh;
+    background-size: 100%;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.left-container{
+    z-index: 2;
+    border-radius:15px;
+    border: #05668D double .5px ;
+    width: 50vh;
+    height: 50%;
+    position: absolute;
+    left: 10%;
+    
+    padding: 40px;
+    top: 18%;
+    font-family: 'Roboto', sans-serif;
+}
+.left-container h1{
+    color: #fff;
+}
+.left-container p{
+    color: #fff;
+    font-size: 16px;    
+}
+
+.overlay{
+    z-index: 1;
+    background: linear-gradient(45deg, #0974a7, transparent);
+    width: 100%;
+    height: 92vh;
+    position:absolute;
+    top: 0vh;
+    left: 0;
+
+}
+/* Central Overlay and content end */
+
+/* Footer css */
+.footer .widget .title {
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.w-about .logo {
+    color: inherit;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 0;
+}
+
+
+.widget p {
+    font-size: 13px;
+}
+.w-about ul, .w-list ul {
+    list-style: none;
+    margin-bottom: 0;
+}
+.socials li {
+    display: inline-block;
+}
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.socials i, .socials svg {
+    font-size: 15px;
+    transition: all .5s ease;
+}
+.w-list a {
+    text-decoration: none;
+    color: #888da8;
+    padding: 8px 0;
+    display: block;
+    font-size: 12px;
+    font-weight: 500;
+}
+.w-list a:hover,a:focus{
+    font-weight: bold;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #05668D;
+}
+.socials li a {
+    color: #f94b4b;
+}
+
+.socials li+li {
+    margin-left: 5px;
+}
+.sub-footer-copyright {
+    padding: 40px 0;
+    text-align: center;
+    border-top: 1px solid #e6ecf5;
+    margin-top: 60px;
+}
+
+/* footer css end */
+
+
+/* userDashboard css  */
+.user-section-logout{
+    display: flex;
+    list-style: none;
+    
+}
+.user-section-logout a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+
+
+.btn-logout{
+   margin-left: 5px;
+   fill: #f2f2f2;
+}
+.btn-logout :hover{
+    box-shadow:
+  0 10.4px 66.6px -24px rgba(0, 0, 0, 0.99),
+  0 105px 130px -24px rgba(0, 0, 0, 0.508)
+;
+ cursor: pointer;
+}
+
+
+/* User Dashboard middle content */
+.inner-dashboard-container{
+    z-index:2;
+    margin-left: 0px;
+   justify-self: center;
+   height: inherit;
+   width: inherit;
+   padding: 91%;
+
+}
+.card-img-top{
+    margin:auto;
+    width: 100%;
+    height: 200px;
+    max-height: 200px;
+    padding: 5px;
+}
+.my-card{
+    border-radius: 8px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #00a896;
+    height: 34em;
+    box-shadow:
+  0 3.7px 50.2px -2px rgba(0, 0, 0, 0.073),
+  0 10.1px 37px -2px rgba(0, 0, 0, 0.081),
+  0 24.4px 24.6px -2px rgba(0, 0, 0, 0.11),
+  0 81px 80px -2px rgba(0, 0, 0, 0.35)
+}
+.btn-primary{
+    
+    background: linear-gradient(-15deg, #00040c, transparent);
+    background-color: #028090;
+    font-size: 14px;
+    border-radius: 5px;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 45px;
+}
+.my-card :hover{
+    transform: scale(1.1);
+}
+.my-card-text{
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: .4;
+    font-size: 14px;
+    background-color:#f2f2f2;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 15px;
+}
+.bg-container{
+    background-image: url(/assets/images/undraw_medicine_b1ol.svg);
+    z-index: 0;
+    background-size: cover;
+}
+.overlay-1{
+    z-index: 1;
+    background:linear-gradient(45deg, #0974a7, transparent);
+}
+
+/* end */
+
+
+
+.overlay-container h1{
+    color: #fff;
+    margin-top: 7%;
+    margin-bottom: 4%;
+}
+
+.h1-change {
+    font-size: 16px;
+    color: #fff;
+    float: right;
+    justify-content: right;
+   
+}
+
+.inner-dashboard-container{
+    height: 20%;
+}
+
+.user-container{
+    justify-items: center;
+    margin-top: 5%;
+ border-radius: 5px;
+}
+/* back button and top heading container */
+.back{
+    color: #f2f2f2;
+    margin-left: 2%;
+    margin-top: 6%;
+    margin-bottom: 2%;
+    
+    z-index: 3;
+}
+.middle-space{
+    flex: 1 1 auto;
+}
+.back-btn{
+    width: 25px;
+    height: 25px;
+
+}
+ .back :hover{
+   
+    box-shadow:
+  0 6.7px 28.6px rgba(0, 0, 0, 0.162),
+  0 22.3px 25.1px rgba(0, 0, 0, 0.238),
+  0 100px 130px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* user Dashboar css end */
+
+/* Design hover and animation */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 11px;
+    border-radius: .25rem;
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #d44c32;
+    border-color: #ffffff;
+}
+
+legend{
+    background-color: #028090;
+    color: #ffffff;
+    min-height: 50px;
+}
+/* change the textbox size and shape */
+.input{
+    font-size: 1.5rem;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 2px;
+    border-width: 1px;
+    border-color: #02c39A;
+    border-radius: 3px;
+    border-color: initial;
+    border-image: initial;
+}
+
+.form-control {
+    font-size: 1.5rem;
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 2px;
+    border-width: 1px;
+    border-color: #02c39A;
+    border-radius: 3px;
+    border-color: initial;
+    border-image: initial;
+}
+/* animations */
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+      transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  @keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInFromBottom{
+      0%{
+          transform:translateY(100%);
+      }
+      100%{
+          transform:translateY(0);
+      }
+  }
+  @keyframes slideInFromTop{
+    0%{
+        opacity: 0;
+        transform:translateY(-30%);
+    }
+    100%{
+        opacity: 1;
+        transform:translateY(0);
+    }
+}

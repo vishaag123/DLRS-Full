@@ -1,0 +1,61 @@
+<div class="clip-container"></div>
+<form class="form-horizontal" [formGroup]="createTestForm" (ngSubmit)="createTest()">
+  <!-- Form Name -->
+  <legend>Create Test</legend>
+
+  <!-- Text input-->
+  <div class="inner-create-test-container">
+    <h3>Please Enter the details to create a test.</h3>
+    <br />
+    <div class="row">
+      <label class="col-md-4 control-label" for="textinput">Test Name</label>
+      <input id="test_name" name="textinput" type="text" formControlName="name" placeholder="Enter Test Name"
+        class="form-control input-md col-md-6" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+      <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+        <div *ngIf="f.name.errors.required">name is required</div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Textarea -->
+    <div class="row">
+      <label class="col-md-4 control-label" for="test_desc">Test Description</label>
+
+      <textarea class="col-md-6 form-control" id="test_desc" formControlName="description"
+        placeholder="Enter Test Description" [ngClass]="{ 'is-invalid': submitted && f.description.errors }">
+Desc</textarea>
+      <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+        <div *ngIf="f.description.errors.required">
+          Description is required
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <!-- Text input-->
+
+    <div class="row">
+      <label class="col-md-4 control-label" for="test_cost">Test Cost</label>
+
+      <input id="test_cost" name="test_cost" type="text" placeholder="Enter Test Cost"
+        class="form-control input-md col-md-6" formControlName="cost"
+        [ngClass]="{ 'is-invalid': submitted && f.cost.errors }" />
+      <div *ngIf="submitted && f.cost.errors" class="invalid-feedback">
+        <div *ngIf="f.cost.errors.required">Cost is required</div>
+        <div *ngIf="f.cost.errors.min">Enter between 1 and 9999</div>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <br /><br />
+    <div class="create-btn-container">
+      <div class="create-btn">
+        <button [disabled]="loading" class="btn btn-primary">
+          <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+          Create
+        </button>
+        <br /><br />
+      </div>
+    </div>
+  </div>
+</form>

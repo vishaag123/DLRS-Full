@@ -1,0 +1,1169 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>My app documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">My app documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>ViewappadminComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/viewappadmin/viewappadmin.component.ts</code>
+</p>
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">providers</td>
+                <td class="col-md-9">
+                                <code><a href="../injectables/SharedService.html" target="_self" >SharedService</a></code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-viewappadmin</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./viewappadmin.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./viewappadmin.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#appointmentList">appointmentList</a>
+                            </li>
+                            <li>
+                                <a href="#currentAppointmentTests">currentAppointmentTests</a>
+                            </li>
+                            <li>
+                                <a href="#currentUserAppointment">currentUserAppointment</a>
+                            </li>
+                            <li>
+                                <a href="#dummyComponent">dummyComponent</a>
+                            </li>
+                            <li>
+                                <a href="#hideContainer">hideContainer</a>
+                            </li>
+                            <li>
+                                <a href="#loading">loading</a>
+                            </li>
+                            <li>
+                                <a href="#selectedFile">selectedFile</a>
+                            </li>
+                            <li>
+                                <a href="#submitted">submitted</a>
+                            </li>
+                            <li>
+                                <a href="#userAppointments">userAppointments</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#getAppointments">getAppointments</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#onFileSelected">onFileSelected</a>
+                            </li>
+                            <li>
+                                <a href="#uploadReport">uploadReport</a>
+                            </li>
+                            <li>
+                                <a href="#uploadReportToServer">uploadReportToServer</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(appointmentService: <a href="../injectables/AppointmentService.html">AppointmentService</a>, testService: <a href="../injectables/TestService.html">TestService</a>, reportService: <a href="../injectables/ReportService.html">ReportService</a>, notificationService: <a href="../injectables/NotificationService.html">NotificationService</a>, sharedService: <a href="../injectables/SharedService.html">SharedService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:20</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>appointmentService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/AppointmentService.html" target="_self" >AppointmentService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>testService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/TestService.html" target="_self" >TestService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>reportService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ReportService.html" target="_self" >ReportService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>notificationService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/NotificationService.html" target="_self" >NotificationService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>sharedService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/SharedService.html" target="_self" >SharedService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="getAppointments"></a>
+                    <span class="name">
+                        <b>
+                            getAppointments
+                        </b>
+                        <a href="#getAppointments"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>getAppointments()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="77"
+                            class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:77</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <b>
+                            ngOnInit
+                        </b>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="52"
+                            class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:52</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="onFileSelected"></a>
+                    <span class="name">
+                        <b>
+                            onFileSelected
+                        </b>
+                        <a href="#onFileSelected"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>onFileSelected(event)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="89"
+                            class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:89</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadReport"></a>
+                    <span class="name">
+                        <b>
+                            uploadReport
+                        </b>
+                        <a href="#uploadReport"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>uploadReport(appointment: <a href="../interfaces/UserAppointment.html">UserAppointment</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="81"
+                            class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:81</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>appointment</td>
+                                    <td>
+                                                <code><a href="../interfaces/UserAppointment.html" target="_self" >UserAppointment</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="uploadReportToServer"></a>
+                    <span class="name">
+                        <b>
+                            uploadReportToServer
+                        </b>
+                        <a href="#uploadReportToServer"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>uploadReportToServer()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="93"
+                            class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:93</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="appointmentList"></a>
+                        <span class="name">
+                            <b>
+                            appointmentList</b>
+                            <a href="#appointmentList"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/AppointmentDetail.html" target="_self" >AppointmentDetail[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentAppointmentTests"></a>
+                        <span class="name">
+                            <b>
+                            currentAppointmentTests</b>
+                            <a href="#currentAppointmentTests"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/TestDetail.html" target="_self" >TestDetail[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="currentUserAppointment"></a>
+                        <span class="name">
+                            <b>
+                            currentUserAppointment</b>
+                            <a href="#currentUserAppointment"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../interfaces/UserAppointment.html" target="_self" >UserAppointment</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dummyComponent"></a>
+                        <span class="name">
+                            <b>
+                            dummyComponent</b>
+                            <a href="#dummyComponent"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:48</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hideContainer"></a>
+                        <span class="name">
+                            <b>
+                            hideContainer</b>
+                            <a href="#hideContainer"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>true</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:49</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loading"></a>
+                        <span class="name">
+                            <b>
+                            loading</b>
+                            <a href="#loading"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="selectedFile"></a>
+                        <span class="name">
+                            <b>
+                            selectedFile</b>
+                            <a href="#selectedFile"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>File</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>null</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="submitted"></a>
+                        <span class="name">
+                            <b>
+                            submitted</b>
+                            <a href="#submitted"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:51</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="userAppointments"></a>
+                        <span class="name">
+                            <b>
+                            userAppointments</b>
+                            <a href="#userAppointments"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>        <code><a href="../classes/Appointment.html" target="_self" >UserAppointment[]</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/app/viewappadmin/viewappadmin.component.ts:46</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { AppointmentService } from &#x27;../services/appointment.service&#x27;;
+import { TestService } from &#x27;../services/test.service&#x27;;
+import { AppointmentResponse } from &#x27;../model/appointmentresponse&#x27;;
+import { UserAppointment, TestDetail } from &#x27;../model/appointmentmaster&#x27;;
+import { SharedService } from &#x27;../services/shared.service&#x27;;
+
+import { ReportService } from &#x27;../services/report.service&#x27;;
+import { NotificationService } from &#x27;../services/notification.service&#x27;;
+import { element } from &#x27;protractor&#x27;;
+import { AppointmentDetail } from &#x27;../model/appointment.create&#x27;;
+
+@Component({
+  selector: &#x27;app-viewappadmin&#x27;,
+  templateUrl: &#x27;./viewappadmin.component.html&#x27;,
+  styleUrls: [&#x27;./viewappadmin.component.css&#x27;],
+  providers: [SharedService]
+})
+
+export class ViewappadminComponent implements OnInit {
+
+
+  constructor(private appointmentService: AppointmentService,
+    private testService: TestService,
+    private reportService:ReportService,
+    private notificationService:NotificationService,
+    private sharedService: SharedService) { 
+      this.appointmentService.getAppointmentMaster().subscribe(data&#x3D;&gt;{
+        data.forEach(user&#x3D;&gt;{
+          if(user.appointmentDetails!&#x3D;&#x3D;&#x27;undefined&#x27; &amp;&amp; user.appointmentDetails.length&gt;0){
+            console.log(user.appointmentDetails);
+            this.userAppointments.push(user);
+            
+          }
+        })
+    });
+    }
+
+    // Handling file upload function
+  currentUserAppointment: UserAppointment;
+  currentAppointmentTests: TestDetail[] &#x3D; [];
+  selectedFile: File &#x3D; null;
+
+
+  appointmentList: AppointmentDetail[] &#x3D; [];
+  userAppointments: UserAppointment[] &#x3D; [];
+  // UI Components
+  dummyComponent;
+  hideContainer &#x3D; true;
+  loading &#x3D; false;
+  submitted &#x3D; false;
+  ngOnInit(): void {
+    
+    this.getAppointments();
+
+  }
+
+//  getAppointmentDetails() {
+//    this.appointmentService.getAllAppointments().subscribe(
+//       data &#x3D;&gt; {
+//         this.appointmentList &#x3D; data;
+//         //get all the other details for the appointment
+//         let i &#x3D; 0;
+//         this.appointmentList.forEach(appointment &#x3D;&gt; {
+//           this.appointmentService.getAppointmentDataByUserId(appointment.userId)
+//             .subscribe(userDetail &#x3D;&gt; {
+//               this.userAppointments[i] &#x3D; userDetail;
+//               i++;
+//             })
+//         })
+//       }
+//     );
+
+//   }
+
+  //another way to get details
+  getAppointments(){
+  
+  }
+
+  uploadReport(appointment: UserAppointment) {
+
+    this.currentUserAppointment&#x3D;appointment;
+    this.currentAppointmentTests&#x3D;this.currentUserAppointment.appointmentDetails[0].testDetails;
+    this.hideContainer &#x3D; !this.hideContainer;
+    
+  }
+
+  onFileSelected(event){
+    this.selectedFile&#x3D;&lt;File&gt;event.target.files[0];
+    console.log(this.selectedFile);
+  }
+  uploadReportToServer(){
+    this.loading&#x3D;true;
+      const fd&#x3D;new FormData;
+      fd.append(&#x27;userId&#x27;,String(this.currentUserAppointment.userId));
+      fd.append(&#x27;appointmentId&#x27;,String(this.currentUserAppointment.appointmentDetails[0].appointmentId))
+      fd.append(&#x27;result&#x27;,this.selectedFile,this.selectedFile.name);
+
+      this.reportService.uploadReport(fd).subscribe(
+        data&#x3D;&gt;{
+          this.notificationService.showSuccess(&quot;Report Uploaded Successfully&quot;,&quot;Upload Success&quot;);
+          this.loading&#x3D;false;
+        },error&#x3D;&gt;{
+          if(error.status&#x3D;&#x3D;400){
+            this.notificationService.showInfo(&quot;Report Already Uploaded&quot;,&quot;Upload Failed&quot;);
+            this.loading&#x3D;false;
+          }else{
+          this.notificationService.showError(&quot;Report Upload Failed&quot;,&quot;Error!&quot;);
+          this.loading&#x3D;false;
+          }
+        }
+        
+      );
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">
+    &lt;div class&#x3D;&quot;row&quot;&gt;
+    
+        &lt;div class&#x3D;&quot;card my-card1 col-md-4&quot; *ngFor&#x3D;&quot;let appointment of userAppointments&quot; (click)&#x3D;&quot;uploadReport(appointment)&quot;&gt;
+            &lt;div class&#x3D;&quot;card-body&quot;&gt;
+                &lt;h5 &gt;Name:  {{appointment.name}}&lt;/h5&gt;
+                &lt;h6 &gt;User Id:    {{appointment.userId}}&lt;/h6&gt;
+                &lt;h6&gt;Email Id:{{appointment.email}}&lt;/h6&gt;
+                &lt;h5 &gt;Appointment Id:{{appointment.appointmentDetails[0].appointmentId}}&lt;/h5&gt;
+            &lt;/div&gt;
+            
+        &lt;/div&gt;
+    
+    &lt;/div&gt;
+
+    &lt;div class&#x3D;&quot;appointment-container&quot; [hidden]&#x3D;&#x27;hideContainer&#x27;&gt;
+        &lt;table class&#x3D;&quot;tab-appointment table&quot;&gt;
+            &lt;th colspan&#x3D;&quot;4&quot;&gt;&lt;h3&gt;Appointment Details&lt;/h3&gt;&lt;/th&gt;
+            &lt;tr&gt;
+                &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Name:&lt;/td&gt;
+                &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment?.name}}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Appointment ID:&lt;/td&gt;
+                &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment?.appointmentDetails[0].appointmentId}}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan&#x3D;&quot;1.5&quot;&gt;User Id:&lt;/td&gt;
+                &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment?.userId}}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td colspan&#x3D;&quot;1.5&quot;&gt;Date of Appointment:&lt;/td&gt;
+                &lt;td colspan&#x3D;&quot;3&quot;&gt;{{currentUserAppointment?.appointmentDetails[0].date}}&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;&lt;th colspan&#x3D;&quot;4&quot;&gt;Test Details&lt;/th&gt;&lt;/tr&gt;
+            
+                &lt;tr&gt;
+                  &lt;th&gt;Test Id&lt;/th&gt;
+                  &lt;th&gt; Test Name&lt;/th&gt;
+                  &lt;th&gt;Description&lt;/th&gt;
+                  &lt;th&gt;Cost&lt;/th&gt;
+                &lt;/tr&gt;
+          
+              
+                &lt;!-- jst for  --&gt;
+                &lt;tr *ngFor&#x3D;&quot;let test of currentAppointmentTests&quot;&gt;
+          
+                  &lt;td&gt;{{test.id}}&lt;/td&gt;
+                  &lt;td&gt;{{test.name}}&lt;/td&gt;
+                  &lt;td&gt;{{test.description}}&lt;/td&gt;
+                  &lt;td&gt;{{test.cost}}&lt;/td&gt;
+                &lt;/tr&gt;
+               
+              &lt;tr&gt;
+                  &lt;th colspan&#x3D;&quot;4&quot;&gt;Upload Report&lt;/th&gt;
+              &lt;/tr&gt;
+              &lt;tr&gt;
+                &lt;td&gt;Select File:&lt;/td&gt;
+                  &lt;td rowspan&#x3D;&quot;2&quot;&gt;
+                    &lt;form (ngSubmit)&#x3D;&quot;uploadReportToServer()&quot; enctype&#x3D;&quot;multipart/form-data&quot;&gt;
+                        &lt;input type&#x3D;&quot;file&quot; class&#x3D;&quot;btn btn-primary&quot;(change)&#x3D;&quot;onFileSelected($event)&quot;&gt;
+                        &lt;button [disabled]&#x3D;&quot;loading&quot; class&#x3D;&quot;btn btn-primary&quot;&gt;
+                            &lt;span *ngIf&#x3D;&quot;loading&quot; class&#x3D;&quot;spinner-border spinner-border-sm mr-1&quot;&gt;&lt;/span&gt;
+                            Upload
+                        &lt;/button&gt;   
+                      &lt;/form&gt;
+                  &lt;/td&gt;
+              &lt;/tr&gt;
+    &lt;/table&gt;
+    &lt;/div&gt;
+    
+
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./viewappadmin.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">
+.card{
+    color: #fff;
+    background: #028090;
+    padding: 2%;
+    margin:2%;
+    width: max-content;
+    height: 150px;
+box-shadow:  0 1.3px 11.9px -7px rgba(0, 0, 0, 0.079),
+0 3px 12.4px -7px rgba(0, 0, 0, 0.113),
+0 5.2px 11.8px -7px rgba(0, 0, 0, 0.135),
+0 8.1px 11.1px -7px rgba(0, 0, 0, 0.155),
+0 12px 10.8px -7px rgba(0, 0, 0, 0.175);
+}
+
+.card :hover{
+
+    transition: .3s ease-in-out;
+    box-shadow:
+    0 -2.8px 54.8px -7px rgba(0, 0, 0, -0.106),
+    0 -5.1px 57.4px -7px rgba(0, 0, 0, -0.015),
+    0 -7px 54.5px -7px rgba(0, 0, 0, 0.105),
+    0 -8.3px 51.1px -7px rgba(0, 0, 0, 0.238),
+    0 -8.7px 49.7px -7px rgba(0, 0, 0, 0.375),
+    0 -8px 52.6px -7px rgba(0, 0, 0, 0.512),
+    0 -5.7px 62.7px -7px rgba(0, 0, 0, 0.645),
+    0 -0.5px 85.1px -7px rgba(0, 0, 0, 0.765),
+    0 10.9px 132.6px -7px rgba(0, 0, 0, 0.856),
+    0 81px 337px -7px rgba(0, 0, 0, 0.75)
+
+}
+
+.table{
+    font-size: 12px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    background-color: #02c39a;
+}
+.table th{
+    background-color: #028090;
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div>    <div class="row">            <div class="card my-card1 col-md-4" *ngFor="let appointment of userAppointments" (click)="uploadReport(appointment)">            <div class="card-body">                <h5 >Name:  {{appointment.name}}</h5>                <h6 >User Id:    {{appointment.userId}}</h6>                <h6>Email Id:{{appointment.email}}</h6>                <h5 >Appointment Id:{{appointment.appointmentDetails[0].appointmentId}}</h5>            </div>                    </div>        </div>    <div class="appointment-container" [hidden]=\'hideContainer\'>        <table class="tab-appointment table">            <th colspan="4"><h3>Appointment Details</h3></th>            <tr>                <td colspan="1.5">Name:</td>                <td colspan="3">{{currentUserAppointment?.name}}</td>            </tr>            <tr>                <td colspan="1.5">Appointment ID:</td>                <td colspan="3">{{currentUserAppointment?.appointmentDetails[0].appointmentId}}</td>            </tr>            <tr>                <td colspan="1.5">User Id:</td>                <td colspan="3">{{currentUserAppointment?.userId}}</td>            </tr>            <tr>                <td colspan="1.5">Date of Appointment:</td>                <td colspan="3">{{currentUserAppointment?.appointmentDetails[0].date}}</td>            </tr>            <tr><th colspan="4">Test Details</th></tr>                            <tr>                  <th>Test Id</th>                  <th> Test Name</th>                  <th>Description</th>                  <th>Cost</th>                </tr>                                        <!-- jst for  -->                <tr *ngFor="let test of currentAppointmentTests">                            <td>{{test.id}}</td>                  <td>{{test.name}}</td>                  <td>{{test.description}}</td>                  <td>{{test.cost}}</td>                </tr>                             <tr>                  <th colspan="4">Upload Report</th>              </tr>              <tr>                <td>Select File:</td>                  <td rowspan="2">                    <form (ngSubmit)="uploadReportToServer()" enctype="multipart/form-data">                        <input type="file" class="btn btn-primary"(change)="onFileSelected($event)">                        <button [disabled]="loading" class="btn btn-primary">                            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>                            Upload                        </button>                         </form>                  </td>              </tr>    </table>    </div>    </div>'
+    var COMPONENTS = [{'name': 'AdminDashboardComponent', 'selector': 'app-admin-dashboard'},{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CheckoutComponent', 'selector': 'app-checkout'},{'name': 'CreateappointmentComponent', 'selector': 'app-createappointment'},{'name': 'CreateTestComponent', 'selector': 'app-create-test'},{'name': 'HomeComponent', 'selector': 'app-home'},{'name': 'LoginComponent', 'selector': ''},{'name': 'RegisterComponent', 'selector': 'app-register'},{'name': 'UserDashboardComponent', 'selector': 'app-user-dashboard'},{'name': 'ViewappadminComponent', 'selector': 'app-viewappadmin'},{'name': 'ViewappuserComponent', 'selector': 'app-viewappuser'},{'name': 'ViewtestComponent', 'selector': 'app-viewtest'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'ViewappadminComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+                   
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> result-matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'ViewappadminComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

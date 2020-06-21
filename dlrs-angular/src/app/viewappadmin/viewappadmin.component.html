@@ -1,0 +1,72 @@
+<div class="row">
+<div class="mcard  col-md-4" *ngFor="let appointment of userAppointments" (click)="uploadReport(appointment)">
+    <div class="overlay-mcard">
+            <div class="content">
+                <h2 >{{appointment.name}}</h2>
+                <label>User Id:</label>    <p>{{appointment.userId}}</p>
+                <label>Email Id:</label>      <p>{{appointment.email}}</p>
+                <label>Appointment Id:</label><p>{{appointment.appointmentDetails[0].appointmentId}}</p>
+            </div>
+    </div>
+ </div>
+</div>
+    
+   
+
+    <div class="appointment-container" [hidden]='hideContainer'>
+        <table class="tab-appointment table">
+            <th colspan="4"><h3>Appointment Details</h3></th>
+            <tr>
+                <td colspan="1.5">Name:</td>
+                <td colspan="3">{{currentUserAppointment?.name}}</td>
+            </tr>
+            <tr>
+                <td colspan="1.5">Appointment ID:</td>
+                <td colspan="3">{{currentUserAppointment?.appointmentDetails[0].appointmentId}}</td>
+            </tr>
+            <tr>
+                <td colspan="1.5">User Id:</td>
+                <td colspan="3">{{currentUserAppointment?.userId}}</td>
+            </tr>
+            <tr>
+                <td colspan="1.5">Date of Appointment:</td>
+                <td colspan="3">{{currentUserAppointment?.appointmentDetails[0].date}}</td>
+            </tr>
+            <tr><th colspan="4">Test Details</th></tr>
+            
+                <tr>
+                  <th>Test Id</th>
+                  <th> Test Name</th>
+                  <th>Description</th>
+                  <th>Cost</th>
+                </tr>
+          
+              
+                <!-- jst for  -->
+                <tr *ngFor="let test of currentAppointmentTests">
+          
+                  <td>{{test.id}}</td>
+                  <td>{{test.name}}</td>
+                  <td>{{test.description}}</td>
+                  <td>{{test.cost}}</td>
+                </tr>
+               
+              <tr>
+                  <th colspan="4">Upload Report</th>
+              </tr>
+              <tr>
+                <td>Select File:</td>
+                  <td rowspan="2">
+                    <form (ngSubmit)="uploadReportToServer()" enctype="multipart/form-data">
+                        <input type="file" class="btn btn-primary"(change)="onFileSelected($event)">
+                        <button [disabled]="loading" class="btn btn-primary">
+                            <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+                            Upload
+                        </button>   
+                      </form>
+                  </td>
+              </tr>
+    </table>
+    </div>
+    
+
